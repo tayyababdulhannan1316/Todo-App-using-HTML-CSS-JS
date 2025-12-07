@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <div class="logo">TodoApp</div>
+            <!-- Optional nav links could go here -->
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <div class="app-wrapper">
+            <header>
+                <h1><i class="fa-solid fa-clipboard-check"></i> Task Master</h1>
+                <p>Stay organized, focused, and get things done.</p>
+            </header>
+    
+            <main>
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="What needs to be done?">
+                    <button id="add-btn"><i class="fa-solid fa-plus">Add Todo</i></button>
+                </div>
+    
+                <div class="controls">
+                    <span id="pending-count">You have 0 pending tasks</span>
+                    <button id="clear-btn">Clear All</button>
+                </div>
+    
+                <ul id="todo-list">
+                    <!-- Todos will be added here dynamically -->
+                </ul>
+            </main>
+            
+            <footer>
+                <p>feel free to add tasks</p>
+            </footer>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 all rights reserved. Designed & Built by Tayyab</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
